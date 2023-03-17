@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <table>
+        <tr>
+          <td><label for="ep"> Eposta</label></td>
+          <td><input type="email" name="" id="ep" placeholder="info@example.com" required/></td>
+        <!-- placeholder örnek yazı olarak getirir
+        for ve id biribiri ile ilşkili olarak label atıklayınca inputu etkinlşetirir-->
+        </tr>
+        <tr>
+          <td><label for="sf">Şifre</label></td>
+          <td><input minlength="3"  maxlength="10" type="password" name="" id="sf" /></td>
+        </tr>
+        <tr>
+          <td><label for="gv"></label>Güvenlik Kodu</label></td>
+          <td><input type="number"  min="10" max="50" name="" id="gv" value="Q2D4&%"  /></td>
+          <!--- readonly sadece okunabilir  disable ise  kilitli olarak getririr-->
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button type="submit">Kaydet</button>
+            <button type="reset">Temizle</button>
+            
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
