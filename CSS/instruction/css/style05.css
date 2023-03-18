@@ -1,0 +1,19 @@
+*{
+    color: tomato;
+   
+}
+
+.ortala {
+    text-align: center;
+    color: blue;
+    font-size: 1,2rem;
+}
+
+.center{
+    text-align: center;
+}
+
+h1.center{
+    color: blue;
+    background-color: cornsilk;
+}
