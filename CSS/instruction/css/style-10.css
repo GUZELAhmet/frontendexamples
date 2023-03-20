@@ -1,0 +1,18 @@
+a:link{
+    color: chocolate;
+    text-decoration: none;
+    background-color: blanchedalmond;
+} /* ziyaret edilmemiş*/
+
+a:visited{
+    color: darkred;
+   
+  /* ziyaret edilmiş*/ 
+}
+
+a:hover{
+    background-color: black;
+    text-align: right;
+    color: aliceblue;
+    cursor:ew-resize;
+} /*mouse ile üzerine gelince*/
