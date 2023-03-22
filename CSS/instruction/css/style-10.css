@@ -16,3 +16,8 @@ a:hover{
     color: aliceblue;
     cursor:ew-resize;
 } /*mouse ile üzerine gelince*/
+
+a:active{
+    color:black;
+    background-color: blanchedalmond;
+}
