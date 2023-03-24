@@ -1,0 +1,19 @@
+.container{
+width: 250px;
+}
+.container div{
+    text-align: center;
+    padding: 0.8rem;
+    background-color: red;
+}
+.container .active{
+    background-color: blue;
+}
+.container a{
+    color: aliceblue;
+    font-size: 1.3rem;
+}
+.container div:hover a{
+    color: yellow;
+  cursor: pointer;
+}

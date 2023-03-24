@@ -1,0 +1,36 @@
+.container{
+    background-color: lightgrey;
+    width: 60%;
+    border-radius: 1rem;
+    margin: auto;
+    
+
+    
+    
+}
+.container img{
+    width: 100%;
+}
+.container h1{
+    color: red;
+    padding: 1rem 0 0 1rem;
+}
+
+.container p{
+    color: gray;
+    font-size: 20px;
+    padding: 0 1rem;
+}
+.container a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 1rem ;
+}
+.container a:hover{
+    color: red;
+}
+.menu{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
