@@ -1,0 +1,21 @@
+
+
+
+nav.menu ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 15px 5px;
+    background-color: aquamarine;
+display: none;
+}
+nav.menu button{
+    display: block;
+}
+
+nav.menu:hover ul{
+    display: inline-block;
+
+
+
+
+}

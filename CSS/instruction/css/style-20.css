@@ -1,0 +1,13 @@
+.title{
+    background-color: aqua;
+    padding: 30px;
+    display: inline;
+    width: 300px;
+}
+em{
+    background-color: rebeccapurple;
+    display: block;
+}
+.hidden{
+    none
+}

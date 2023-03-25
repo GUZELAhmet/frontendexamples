@@ -1,0 +1,50 @@
+p.about::first-letter{ /*ilk harf ile işlem yapar*/
+    font-size: 2rem;
+   
+}
+
+p.about::first-line{/*ilk satrı ile işlem yapr*/
+    color:red;
+}
+p.about::selection{ /*class içinde seçile  alanlar ile*/
+    background-color: darkcyan;
+}
+.list li::marker{/*liste işaretleri veya numarasını seçmek */
+    color: brown;
+
+}
+
+.title::before{ /*ön  tarafına ekler*/
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 25px;
+    background-color: red;
+    margin-right: 10px;
+
+
+   
+
+}
+.title::after{ /*sonuna ekler*/
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 25px;
+    background-color: red;
+    margin-left: 10px;
+    
+
+
+}
+
+.about span::before{
+    content: "[";
+    color :red;
+    font-weight: 800;
+}
+.about span::before{
+    content: "]";
+    color :red;
+    font-weight: 800;
+}

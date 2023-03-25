@@ -1,0 +1,37 @@
+.login-form input[type="text"]{
+background-color: rgb(233, 233, 233);
+border: none;
+pedding:5px 10px;
+}
+
+.login-form input[type="text"]:focus{
+    background-color: aqua;
+}
+.chk-menu:checked{
+    outline: 3px solid red;
+}
+ul.liste li:first-child{/*ilk çocuk*/
+    font-weight: 600;
+}
+
+ul.liste li:last-child{ /* son çocuk*/
+    font-style: italic;
+}
+ul.liste li:nth-child(3){ /*3. çocuk*/
+    color: red;
+}
+
+.price-list tr:nth-child(odd){ /* tek satır*/
+    background-color: antiquewhite;
+}
+.price-list tr:nth-child(even){ /* çift satır*/
+    background-color: rgb(241, 146, 21);
+}
+
+.price-list tr:nth-child(3n+1){ 
+    background-color: rgb(242, 132, 119);
+}
+
+
+
+
