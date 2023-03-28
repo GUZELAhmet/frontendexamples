@@ -1,0 +1,24 @@
+nav.menu li{
+color:red;
+}
+
+nav.menu >ul>li{
+    color: green;
+}
+
+nav.menu ul ul>li{
+    color: blueviolet;
+}
+nav.menu ul ul>li:last-child{
+    color: indianred;
+}
+
+nav.menu + p {/* menu clasından hemen sonraki olacak araya başka bir şey girerse olmaz*/
+    font-size: 1.5rem;
+}
+ nav.menu ~ p{  /* menu classından sonra gelen tüm  pleri seçer araya başka tag girse bile*/
+    color: darkgreen; 
+ }
+ nav.menu li+li+li~li{
+    color:brown;
+ }
