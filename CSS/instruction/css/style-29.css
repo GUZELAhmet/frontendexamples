@@ -1,0 +1,24 @@
+.custom-checkbox input[type="checkbox"]{
+    display: none;
+  /*  visibility: hidden; yerini muhafaza eder ve saklar */
+
+}
+.custom-checkbox{
+    user-select: none;
+}
+
+.custom-checkbox label{
+    cursor: pointer;
+}
+.custom-checkbox label::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px  solid red;
+    margin-right: 5px;
+    border-radius: 5px;
+    }
+    .custom-checkbox >input:checked + label::before{
+        background-color: red;
+    }
