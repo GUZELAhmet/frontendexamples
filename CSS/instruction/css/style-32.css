@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+   /* height: 100vh;*/
+   gap:5px; /*aradaki boşluk*/
+}
+
+
+.container div:nth-child(1){
+    background-color: aqua;
+    flex: 0 1 200px;/*elemanların büyüöw vw küçülme oranlarını belirler*/
+}             /*ilk değer tüm childlarda toplamın oranı kadar bolulları paylşıp yer kaplar*/
+.container div:nth-child(2){
+    background-color:crimson;
+    flex: 1 0  50px;
+}               /* 3. değer default genişlik değeri  2. değer 0 olduğu için daraltma 50px altınadüşemez*/
+.container div:nth-child(3){
+    background-color: chartreuse;
+    flex: 2 0 250px;
+}
+.container div:nth-child(4){
+    background-color: blueviolet;
+}
+.container div:nth-child(5){
+    background-color:coral;
+}
