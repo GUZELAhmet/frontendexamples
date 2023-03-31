@@ -1,0 +1,43 @@
+body{
+    background-color: aliceblue;
+    padding: 2rem 0;
+}
+div >img{
+    width: 90%;
+   
+}
+
+section.menu{
+    text-align: center;
+    display:block;
+}
+section.menu >div{
+    display:inline-block;
+    width: 25%;
+    margin-right: 2rem;
+    border: 10px solid;
+    padding: 2rem;
+
+}
+section.menu div span{
+font-size: 1.4rem;
+font-weight: 700;
+color: #e3b49b;
+margin-right: 2rem;
+}
+section.menu div a{
+    background-color: rgb(69, 32, 32);
+color: aliceblue;
+text-decoration: none;
+padding: 1rem;
+}
+
+section.menu div span:hover,section.menu div a:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+
+
+
