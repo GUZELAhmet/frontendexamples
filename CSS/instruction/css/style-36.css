@@ -1,0 +1,35 @@
+:root{
+    --color1:rgb(19, 213, 74);
+    --color2:rgb(4, 4, 61);
+
+}
+.button-group{
+    display: flex;
+    gap:2px;
+}
+
+.button-group button{
+   
+    color: var(--color1);
+    background-color: var(--color2);
+    padding: 10px 15px;
+    cursor: pointer;
+    flex: 0 1 150px;
+    border: 2px solid var(--color1);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.button-group button:first-child{
+   border-radius: 50px 15px 15px 50px;
+}
+
+.button-group button:last-child{
+    border-radius: 15px 50px 50px 15px;
+}
+.button-group >button:hover{
+    background-color: var(--color1);
+    color:var(--color2);
+    border:2px solid var(--color2);
+}
+ 
