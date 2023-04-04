@@ -1,0 +1,21 @@
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0; 
+    padding: 0; 
+}
+h1.baslik {
+    font-size: 20em;
+    text-transform: uppercase;
+    font-weight: 900;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    background-image: url(../img/seyahat3.jpeg);
+    background-position: center;
+    background-size: cover;
+    -webkit-text-fill-color:transparent ;
+    -webkit-background-clip: text;
+
+}
