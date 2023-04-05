@@ -2,5 +2,8 @@
     width: 200px;
     height: 200px;
     background-color:red ;
-    transform: translate(200px,300px);
+    transform: translateX(50%);
+}
+.img{
+    transform:rotateX(80deg),scale(0.5),rotate(20) ;
 }

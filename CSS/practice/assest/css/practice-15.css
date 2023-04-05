@@ -1,0 +1,57 @@
+body{ /*box sizeng kaplayacağı alanı kontrol etmek için */
+box-sizing: border-box ;
+background-color: darkseagreen;
+font-family: 'Poppins', sans-serif;
+
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.box{
+    width: 33.3%;
+    padding: 8rem;
+}
+.price{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.price:hover{
+    box-shadow: 0 5px 10px 0 rgb(192, 44, 192);
+ margin: 0;
+ padding: 0;
+ transition: ease-in-out, 2s;
+
+}
+.price .header{
+    background-color: rgb(24, 24, 84);
+    color: aliceblue;
+    font-size: 35px;
+    
+}
+.price li{
+    border-bottom: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    background-color: aliceblue;
+    text-transform: uppercase;
+}
+.price .custom{
+    font-size: 2rem;
+}
+.button{
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid rgb(23, 3, 44);
+    border-radius: 25px;
+    background: linear-gradient(45deg, rgb(54, 36, 2),rgb(145, 18, 18),rgb(30, 170, 30));
+    padding: 3px;
+}
+.button:hover{
+   color: bisque;
+    opacity: 0.3;
+}

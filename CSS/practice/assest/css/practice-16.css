@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body{
+    font-family: Roboto; 
+    padding:2rem;
+}
+section.container{
+    text-align: center;
+}
+section.container div.cards{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section.container div.cards div{
+    width: 30%;
+    padding:0.5rem;
+    
+}
+.baslik{
+    position: relative;
+
+}
+.baslik span{
+    position:absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.2;
+    color: red;
+}
