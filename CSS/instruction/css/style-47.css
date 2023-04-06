@@ -1,0 +1,18 @@
+.title{
+    font-size: 5rem;
+    color: aliceblue;
+    text-shadow: 3px -3px 5px black ;
+}
+
+.title1{
+    font-size: 5rem;
+    color: rgb(181, 211, 237);
+    text-shadow: 0px 0px 5px black,2px 2px 3px purple,-5px -5px 2px  goldenrod ;
+}
+.title3{
+    font-size: 5rem;
+    color:rgb(53, 133, 203);
+    box-shadow: 5px 3px 10px greenyellow;
+    display: inline-block;
+    padding:10px;
+}

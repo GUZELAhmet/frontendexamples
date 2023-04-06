@@ -1,0 +1,12 @@
+body{
+    padding: 20px;
+}
+.boxes{
+    display: flex;
+    justify-content: space-between;
+}
+.boxes div{
+    width: 200px;
+    height:200px;
+    border-radius: 20px;
+}
