@@ -1,0 +1,27 @@
+.highlights{
+    text-align: center;
+    margin-top: 20px;
+}
+.highlights .card .card-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.highlights .card .card-footer > div{
+    border-right:1px solid #cccccc;
+    flex:1;
+    padding:5px;
+}
+.highlights .card .card-footer > div:last-child{
+    border-right:none;
+}
+@media screen and (min-width: 768px) {
+    .highlights div[class^="col-"]:nth-child(2) .card{
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+}
+    
+}
