@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foor Loop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-1">PRODUCTS</h1>
+      <form action="">
+        <div class="input-group input-group-lg">
+          <span class="input-group-text" id="basic-addon1">%</span>
+          <input
+            id="txtDiscountRate"
+            type="text"
+            class="form-control"
+            placeholder="Discount rate"
+          />
+          <button onclick="setPrices()" class="btn btn-info" type="button">
+            Update
+          </button>
+        </div>
+      </form>
+      <ul class="list-group mt-4" id="productList">
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          Mainboard <span class="badge bg-primary rounded-pill">$245</span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          Graphic card <span class="badge bg-primary rounded-pill">$356</span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          Sound card <span class="badge bg-primary rounded-pill">$65</span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          Printer <span class="badge bg-primary rounded-pill">$125</span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          Display <span class="badge bg-primary rounded-pill">$150</span>
+        </li>
+      </ul>
+    </div>
+    <script>
+      const txtDiscountRate = document.querySelector("#txtDiscountRate");
+      const productList = document.querySelectorAll("#productList li");
+      function setPrices() {
+        const discountRate = txtDiscountRate.value || 0;
+        console.log(discountRate);
+        for (let i = 0; i < productList.length; i++) {
+          //console.log(productList[i]);
+          const priceEl = productList[i].querySelector("span");
+          console.log(priceEl.innerText);
+        }
+      }
+    </script>
+  </body>
+</html>
