@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: aqua;
+      }
+      .container {
+        background-color: antiquewhite;
+        border: 3px solid black;
+        width: 40%;
+        margin: 2rem;
+      }
+
+      .btn {
+        margin-right: 0.5rem;
+      }
+      .mesaj {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: red;
+        background-color: chartreuse;
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="mb-3">
+          <label for="vize" class="forday02/05-practice.htmlm-label">Vize</label>
+          <input type="number" class="form-control" id="vize" />
+        </div>
+        <div class="mb-3">
+          <label for="final" class="form-label">Final</label>
+          <input type="number" class="form-control" id="final" />
+        </div>
+        <button type="button" class="btn btn-primary" onclick="hesapla()">
+          Hesapla
+        </button>
+        <button type="reset" class="btn btn-danger" onclick="sil()">
+          Temizle
+        </button>
+      </form>
+      <div id="msg"></div>
+    </div>
+
+    <script src="../day02/js/app-05.js"></script>
+  </body>
+</html>

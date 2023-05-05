@@ -34,7 +34,7 @@
 
         let salary = txtSalary.value;
         salary = status.value === "retired" ? salary * 0.9 : salary * 0.95;
-        resultEl.innerHTML = salary;
+        resultEl.innerHTML = `bu kişinin maaşı ${salary.toFixed(2)} tl`;
       }
     </script>
   </body>
