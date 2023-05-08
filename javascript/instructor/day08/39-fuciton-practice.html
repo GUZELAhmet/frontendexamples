@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="setPrice()">Set Price</button>
+
+    <script>
+      const setPrice = () => {
+        const price = prompt("Please enter the price");
+        const totalPrice = getPrice(price, 25, 18);
+        alert(`the final price is ${totalPrice}`);
+      };
+
+      const getPrice = (price, discountRate, taxtRate) => {
+        if (!price || isNaN(price) || price < 0) return; // çağrıldığı yere geri döndürülür
+        if (!discountRate || isNaN(discountRate)) discountRate = 0;
+        if (!taxtRate || isNaN(taxtRate)) taxtRate = 0;
+
+        if (price > 1500) discountRate += 10;
+
+        const totalTax = (price * taxtRate) / 100;
+        const totalDiscount = (price * discountRate) / 100;
+        const total = price - totalDiscount + totalTax;
+
+        return total;
+      };
+    </script>
+  </body>
+</html>

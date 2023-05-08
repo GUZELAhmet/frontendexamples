@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope</title>
+  </head>
+  <body>
+    <script>
+      // Javascript aynı scope içinde aynı isimde değişken kabul etmez,
+      // ancak farklı scope larda olursa kabul eder ve her biri için hafizada bir yer ayırır
+
+      let x1 = 5;
+      const setNum1 = () => {
+        console.log(x1);
+        let x1 = 11;
+        console.log(x1);
+      };
+      setNum1();
+      console.log(++x1);
+    </script>
+  </body>
+</html>
