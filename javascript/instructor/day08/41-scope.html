@@ -13,12 +13,22 @@
 
       let x1 = 5;
       const setNum1 = () => {
-        console.log(x1);
+        //console.log(x1); //hoisting sebebiyle hata alınır
         let x1 = 11;
         console.log(x1);
       };
       setNum1();
       console.log(++x1);
+      // Block scope ES6 ile birlikte let ve const için geliştirilmiştir
+      // var ile tanımlanan değişkenler block scope yapısını anlamaz, kendini function da zanneder.
+      const setNum2 = () => {
+        let x1 = 11;
+        if (x1 > 0) {
+          var x2 = 67;
+        }
+        console.log(x2);
+      };
+      setNum2();
     </script>
   </body>
 </html>
