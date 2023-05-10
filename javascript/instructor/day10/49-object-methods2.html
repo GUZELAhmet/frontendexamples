@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const car1 = {
+        // düz obje
+        brand: "Audi",
+        model: "A4",
+        color: "red",
+        model: "A6",
+      };
+      console.log(car1.model); //A6 verir
+
+      const car2 = {
+        brand: "Mercedes",
+        year: 2023,
+      };
+      let result = Object.assign(car1, car2);
+      console.log(car1 === result);
+      //Bir neseneden  tamamen bağımsız yeni bir nesene oluşturmak için
+      //yani kopya oluşturmak için  (shallow copy )Object.assign kullnılır
+
+      const car3 = Object.assign({}, car1);
+
+      console.log(car3);
+    </script>
+  </body>
+</html>
