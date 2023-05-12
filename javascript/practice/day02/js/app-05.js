@@ -48,6 +48,6 @@ function hesapla(){
 
 function sil(){
     mesaj.innerText="";
-    document.querySelector("#msg").classList.add("d-none"),
+    document.querySelector("#msg").classList.add("d-none");
 
 }
