@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="welcomeText">welcome to my web app</h1>
+
+    <article></article>
+    <p class="contact">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur non
+      nobis consectetur molestias vero saepe amet maiores exercitationem?
+      Deleniti blanditiis, ipsa minus suscipit non fugit maiores ab commodi,
+      accusantium facilis vel. Facilis rerum deleniti tempora blanditiis earum
+      eligendi quaerat cupiditate laborum vero necessitatibus voluptatum eveniet
+      delectus, ducimus sed nostrum. Impedit?
+    </p>
+
+    <script>
+      const welcomeTextEl = document.getElementById("welcomeText");
+      welcomeTextEl.innerHTML += ".";
+
+      const articalEls = document.getElementsByTagName("article");
+      articalEls[0].innerHTML = "hello";
+      articalEls[0].style.color = "red";
+      articalEls[0].style.fontSize = "30px";
+      articalEls[0].style.border = "1px solid red";
+
+      const contactEls = document.getElementsByClassName("contact");
+
+      contactEls[0].innerHTML += "hi!";
+    </script>
+  </body>
+</html>
