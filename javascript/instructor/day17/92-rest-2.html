@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const getAverage = (firstName, lastNime, ...score) => {
+        const average = score.reduce((t, x) => t + x, 0) / (score.length + 1);
+        return `${firstName} ${lastNime} s average score is ${average}.`;
+      };
+      console.log(getAverage("a", "b", 2, 3, 4, 5));
+      console.log(getAverage("a", "b", 2, 3, 4, 5));
+      alert(getAverage("Ahmet", "GUZEL", 45, 63, 85, 95, 10, 100));
+    </script>
+  </body>
+</html>

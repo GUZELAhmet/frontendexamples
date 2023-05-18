@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice -19</title>
+  </head>
+  <body>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+
+    <script>
+      const baslik = document.getElementsByTagName("h2");
+
+      const array1 = [1, 2, 3, 4];
+      const array2 = [4, 5, 6, 7];
+      baslik[0].innerText = array1 + " " + array2;
+
+      const birlesikdizi1 = array1.concat(array2);
+
+      baslik[1].innerText = birlesikdizi1;
+
+      const birlesikdizi2 = [...new Set(array1.concat(array2))];
+
+      baslik[2].innerText = birlesikdizi2;
+    </script>
+  </body>
+</html>
