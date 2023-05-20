@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructing</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        firstName: "jhon",
+        lastName: "doe",
+        age: 30,
+        eyecolor: "blue",
+      };
+
+      //const { firstName, lastName, age } = person;
+      const sayHello = (firstName, lastName) => {
+        alert(`Hello ${firstName} ${lastName}`);
+      };
+      const sayHello2 = (p) => {
+        alert(`Hello ${p.firstName} ${p.lastName}`);
+      };
+
+      const sayHello3 = ({ firstName, lastName }) => {
+        //destructing  yaparak parametrelerin alınması
+        alert(`Hello ${firstName} ${lastName}`);
+      };
+
+      sayHello("ali", "gel");
+      sayHello(person.firstName, person.lastName);
+      sayHello2(person);
+      sayHello3(person);
+    </script>
+  </body>
+</html>

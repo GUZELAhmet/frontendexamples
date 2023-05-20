@@ -8,14 +8,28 @@
   </head>
   <body>
     <script>
-      let cities = ["Ankara", "İstanbul", "London", "Helsinki", "Tokyo"];
-      console.log(cities);
-      cities = ["Zurih", ...cities, "Marsilya"];
-      console.log(cities);
-      let countries1 = ["Germany", "Denmark", "Italy", "France"];
-      let countries2 = ["Turkey", "China", "Russia"];
-      let countries = [...countries1, "Belgium", ...countries2];
-      console.log(countries);
+      "use strict"; //strict mode izinleri kısıtlı
+      const person = {
+        firstName: "Ali",
+        lastName: "Bob",
+        salary: 22000,
+      };
+
+      /*!referace type*/
+      const p1 = person;
+      p1.firstName = "Veli";
+      console.log(person);
+      console.log(p1);
+
+      //--------------------------------------
+      const p2 = { ...person }; //object.assign(person shallow copy)
+      p2.firstName = "Ayşe";
+      console.log(person);
+      console.log(p2);
+
+      const p3 = { ...person, age: 13, firstName: "Serkan" };
+      delete p3.salary;
+      console.log(p3);
     </script>
   </body>
 </html>

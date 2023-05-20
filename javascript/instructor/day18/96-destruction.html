@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // klasik yöntem
+      const person = {
+        firstName: "jhon",
+        lastName: "doe",
+        age: 30,
+        eyecolor: "blue",
+      };
+      const message = `${person.firstName} ${person.lastName} isimli personel ${person.age} yaşına girdi`;
+      console.log(message);
+
+      //destructing yöntemi
+      const { firstName, lastName, age } = person;
+      const message2 = `${firstName} ${lastName} isimli personel ${age} yaşına girdi`;
+      console.log(message2);
+    </script>
+  </body>
+</html>
