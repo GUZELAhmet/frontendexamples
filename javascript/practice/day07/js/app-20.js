@@ -13,7 +13,7 @@ btnGeneratetEl.addEventListener("click",()=>{
 
 
     while (randomArray.length < 6) {
-        var randomNumber = Math.floor(Math.random() * 10);
+        var randomNumber = Math.floor(Math.random() * 11);
         if (randomArray.indexOf(randomNumber) === -1) {
             randomArray.push(randomNumber);
         }
@@ -25,9 +25,9 @@ btnGeneratetEl.addEventListener("click",()=>{
     })
         const toplamArray=userArray.concat(randomArray);
         console.log(toplamArray);
-       const setArray=[...new Set(userArray.concat(randomArray))];
+       const setArray=[...new Set(randomArray.concat(userArray))];
        console.log(setArray);
-       const ayni=toplamArray.length-setArray.length;
+       const ayni=12-setArray.length;
        console.log(ayni);
        if (ayni>0) {
         sonucEl.innerHTML=`${randomArray} <br>  ${ayni} sayıyı tutturdunuz tebrikleri!`;
