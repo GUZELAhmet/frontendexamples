@@ -1,0 +1,18 @@
+header{
+    background-color: rgb(55, 0, 255);
+    color:alpha($color: #000000);
+    text-align: left;
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+        color: red;
+    }
+
+    ul .right-menu{
+        padding: 20px;
+    }
+}

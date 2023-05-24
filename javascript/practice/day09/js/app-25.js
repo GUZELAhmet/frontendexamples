@@ -163,6 +163,7 @@ const listem = [
          molestiae dignissimos voluptas possimus sint animi ipsum enim eveniet, corporis quia.`,
     },
 ];
+
 const butonlarEl = document.querySelector("#butonlar");
 const yemekIcerikEl = document.querySelector("#yemekicerik");
 window.addEventListener("DOMContentLoaded", () => {
@@ -171,28 +172,45 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 const itemYerlestir = (listeler) => {
     console.log(listeler);
-    let icerikler = listeler.map((bilgi)=>{
+    let icerikler = listeler.map((bilgi) => {
         console.log(bilgi);
         return `
-        <div class="cerceve">
-            <img src=${bilgi.img} class="resim">
-            <h4>${bilgi.title}</h4>
-            <h4>${bilgi.price}</h4>
-            <p>${bilgi.desc}</p>
-        </div>
+                    <div class="cerceve"> 
+                        <img src=${bilgi.img} class="resim">
+                        <h4>${bilgi.title}</h4>
+                        <h4>${bilgi.price}</h4>
+                        <p>${bilgi.desc}</p>        
+                    </div>          
         `;
     });
-    icerikler=icerikler.join("");
-    console.log(icerikler);
-    yemekIcerikEl.innerHTML=icerikler;
+    icerikler = icerikler.join("");
+    yemekIcerikEl.innerHTML = icerikler;
 };
-const butonlarFiltrele=()=>{
-    let categories=[];
+const butonlarFiltrele = () => {
+    let categories = [];
     categories.push("all");
-    listem.forEach((item)=>{
-        if(!categories.includes(item.category)){
+    listem.forEach((item) => {
+        if (!categories.includes(item.category)) {
             categories.push(item.category);
         }
     });
     console.log(categories);
+    const butonlar = categories.map((category) => {
+        return `
+            <button id=${category}>${category}</button>        
+        `;
+    });
+    butonlarEl.innerHTML = butonlar;
+    const filtrelemeBtns = butonlarEl.querySelectorAll("button");
+    filtrelemeBtns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            console.log(e.target.id);
+            const category = e.target.id;
+            const menuCategory = listem.filter((menuItem) => menuItem.category === category);
+            if (category == "all")
+                itemYerlestir(listem);
+            else
+                itemYerlestir(menuCategory);
+        });
+    });
 };
