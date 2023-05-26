@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style-31.css" />
+  </head>
+  <body>
+    <section class="weather-card">
+      <div class="left-panel">
+        <div class="date">
+          <h2 id="gunumuz">Sunday</h2>
+          <h4 id="tarih">15 Jan 2022</h4>
+          <h5>
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="yerimiz">Ankara,TR</span>
+          </h5>
+        </div>
+        <div class="temp">
+          <h2 id="durum"><i class="fa-solid fa-sun"></i></h2>
+          <h3 id="sicaklik">24&deg;C</h3>
+          <h5 id="durumYazi">Sunny</h5>
+        </div>
+      </div>
+      <div class="right-panel">
+        <ul class="status">
+          <li><span>PRECIPITION</span><span id="yagis">0%</span></li>
+          <li><span>HUMIDITY</span><span id="nem">34%</span></li>
+          <li><span>WIND</span><span id="ruzgar">0 km/h</span></li>
+        </ul>
+
+        <ul class="days">
+          <li>
+            <span id="durum1"><i class="fa-solid fa-sun"></i></span>
+            <span id="gun1">Sun</span>
+            <span id="sicaklik1">29&deg;C</span>
+          </li>
+          <li>
+            <span id="durum2"><i class="fa-solid fa-cloud-moon-rain"></i></span>
+            <span id="gun2">Mon</span>
+            <span id="sicaklik2">24&deg;C</span>
+          </li>
+          <li>
+            <span id="durum3"><i class="fa-solid fa-cloud-sun"></i></span>
+            <span id="gun3">Tue</span>
+            <span id="sicaklik3">22&deg;C</span>
+          </li>
+          <li>
+            <span id="durum4"><i class="fa-solid fa-cloud-rain"></i></span>
+            <span id="gun4">Wed</span>
+            <span id="sicaklik4">20&deg;C</span>
+          </li>
+        </ul>
+        <button id="changeLocation">
+          <i class="fa-solid fa-location-dot"></i> Change Location
+        </button>
+      </div>
+    </section>
+    <div id="ilGoster">
+      <select name="iller" id="iller">
+        <option value="ankara">Ankara</option>
+        <option value="istanbul">İstanbul</option>
+        <option value="izmir">İzmir</option>
+        <option value="kayseri">Kayseri</option>
+        <option value="antalya">Antalya</option>
+        <option value="erzurum">Erzurum</option>
+        <option value="trabzon">Trabzon</option>
+        <option value="diyarbakir">Diyarbakır</option>
+        <option value="zonguldak">Zonguldak</option>
+      </select>
+    </div>
+    <script src="./assets/js/app-31.js"></script>
+  </body>
+</html>

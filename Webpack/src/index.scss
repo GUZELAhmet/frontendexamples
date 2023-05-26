@@ -1,0 +1,12 @@
+
+$success: rgb(232, 255, 25);
+$border-radius: 30px;
+@import "bootstrap/scss/bootstrap";
+
+body{
+    background-color: chocolate;
+
+    button{
+        background-color:aquamarine;
+    }
+}
