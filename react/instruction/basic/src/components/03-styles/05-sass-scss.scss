@@ -1,0 +1,34 @@
+$clr-title: rgb(16, 214, 16);
+$clr-secondary: rgb(0, 5, 155);
+
+.sass-scss {
+    h2 {
+        color: $clr-title;
+    }
+
+    #heading {
+        font-style: italic;
+    }
+
+
+    .list {
+        text-align: center;
+        list-style-type: none;
+
+        li {
+            color: $clr-title;
+            font-style: italic;
+        }
+    }
+    .article1 {
+        color: $clr-title;
+    }
+    .article2 {
+        color: $clr-secondary;
+    }
+    .article3 {
+        color: $clr-title;
+    }
+}
+
+

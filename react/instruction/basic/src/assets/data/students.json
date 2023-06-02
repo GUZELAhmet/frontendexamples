@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "age": 16,
+        "grade": 11
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "age": 15,
+        "grade": 10
+    },
+    {
+        "id": 3,
+        "name": "Mark Johnson",
+        "age": 17,
+        "grade": 12
+    },
+    {
+        "id": 4,
+        "name": "Sarah Lee",
+        "age": 14,
+        "grade": 9
+    },
+    {
+        "id": 5,
+        "name": "David Kim",
+        "age": 15,
+        "grade": 10
+    },
+    {
+        "id": 6,
+        "name": "Emily Brown",
+        "age": 16,
+        "grade": 11
+    },
+    {
+        "id": 7,
+        "name": "Jack Williams",
+        "age": 14,
+        "grade": 9
+    },
+    {
+        "id": 8,
+        "name": "Ava Davis",
+        "age": 15,
+        "grade": 10
+    },
+    {
+        "id": 9,
+        "name": "Samuel Rodriguez",
+        "age": 17,
+        "grade": 12
+    },
+    {
+        "id": 10,
+        "name": "Sophia Martinez",
+        "age": 14,
+        "grade": 9
+    },
+    {
+        "id": 11,
+        "name": "William Wilson",
+        "age": 15,
+        "grade": 10
+    },
+    {
+        "id": 12,
+        "name": "Victoria Johnson",
+        "age": 16,
+        "grade": 11
+    },
+    {
+        "id": 13,
+        "name": "Benjamin Thompson",
+        "age": 14,
+        "grade": 9
+    },
+    {
+        "id": 14,
+        "name": "Olivia Martin",
+        "age": 17,
+        "grade": 12
+    },
+    {
+        "id": 15,
+        "name": "Ethan Clark",
+        "age": 15,
+        "grade": 10
+    },
+    {
+        "id": 16,
+        "name": "Isabella Lewis",
+        "age": 16,
+        "grade": 11
+    },
+    {
+        "id": 17,
+        "name": "Lucas Hall",
+        "age": 14,
+        "grade": 9
+    },
+    {
+        "id": 18,
+        "name": "Chloe King",
+        "age": 17,
+        "grade": 12
+    },
+    {
+        "id": 19,
+        "name": "Michael Wright",
+        "age": 15,
+        "grade": 10
+    },
+    {
+        "id": 20,
+        "name": "Emma Garcia",
+        "age": 14,
+        "grade": 9
+    }
+]

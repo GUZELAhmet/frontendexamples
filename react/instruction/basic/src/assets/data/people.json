@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "image": "person1.jpg",
+        "name": "Rebecca Jenkins",
+        "age": 27
+    },
+    {
+        "id": 13,
+        "image": "person2.jpg",
+        "name": "Jackson Cook",
+        "age": 28
+    },
+    {
+        "id": 11123,
+        "image": "person3.jpg",
+        "name": "Katherine Jones",
+        "age": 24
+    },
+    {
+        "id": 245,
+        "image": "person4.jpg",
+        "name": "Tobias Diaz",
+        "age": 27
+    },
+    {
+        "id": 456,
+        "image": "person5.jpg",
+        "name": "Betty Robertson",
+        "age": 30
+    }
+]
