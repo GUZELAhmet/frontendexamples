@@ -5,6 +5,10 @@ import Jsx2 from './components/02-jsx/02-jsx';
 import Jsx3 from './components/02-jsx/03-jsx';
 import SassScss from './components/03-styles/05-sass-scss';
 import DijitalSaatUygulamasi1 from './components/04-digital-saat-uygulamasi1/dijital-saat-uygulamasi1';
+import Greetings from './components/05-props/01-greetings';
+import Products from './components/05-props/05-products';
+import DijitalSaatUygulamasi2 from './components/06-digital-saat-uygulamasi2/dijital-saat-uygulamasi2';
+import Image from './components/07-images/01-images';
 export default function App() {
     return (
         <>
@@ -17,7 +21,18 @@ export default function App() {
             <br/>
          <SassScss/>  
          <br/>
-         <DijitalSaatUygulamasi1 />     
+         <DijitalSaatUygulamasi1 />  
+         <br/>
+         <Greetings/> 
+         <br/>
+         
+         <Products/>
+         <br/>
+         <br/>
+         <br/>
+<DijitalSaatUygulamasi2 textColor="white" bgColor="red"/>
+        <br/>
+        <Image/>
         </>
     )
 };
