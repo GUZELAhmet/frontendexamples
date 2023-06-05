@@ -8,6 +8,7 @@ const Image = () => {
     };
         return (
         <div>
+            
             {/* STATIK IMAGE */}
             <img
                 src="./image1.jpg"
