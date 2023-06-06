@@ -11,6 +11,22 @@ import DijitalSaatUygulamasi2 from './components/06-digital-saat-uygulamasi2/dij
 import Image from './components/07-images/01-images';
 import ImageGallery from './components/07-images/02-image-galery';
 import ProfileCard from './components/08-profile-card/profile-card';
+import BootsrapKlasikYontem from './components/09-bootstrap/01-bootstrapt-klasik-yontem';
+import BootstrapModernYontem from './components/09-bootstrap/02-bootstrap-modern-yontem';
+import "./assets/scss/style.scss"
+import ReactIcons from './components/10-icons/01-react-icons';
+import MaterialIcons from './components/10-icons/02-material-icons';
+
+const profileCardData = {
+    name: "Emir",
+    location: "New York",
+    image: "person4.jpg",
+    statistics: [
+        { title: "Likes", stat: 145 },
+        { title: "Photos", stat: 7 },
+        { title: "Following", stat: 329 },
+    ]
+};
 export default function App() {
     return (
         <>
@@ -39,7 +55,36 @@ export default function App() {
         <br/>
         <ImageGallery/>
         <br/>
-        <ProfileCard/>
+        <ProfileCard
+                name="Walker"
+                location="Nashville, Tennesse"
+                image="profile-card.jpg"
+                statistics={[
+                    { title: "Shot", stat: 2 },
+                    { title: "Follower", stat: 234 },
+                    { title: "Following", stat: 327 },
+                ]}
+            />
+            <ProfileCard
+                name="Kyle"
+                location="London"
+                image="profile.jpg"
+                statistics={[
+                    { title: "Likes", stat: 50 },
+                    { title: "Photos", stat: 12 },
+                    { title: "Following", stat: 10 },
+                ]}
+            />
+            <br/>
+            <ProfileCard {...profileCardData}/>
+            <br/>
+            <BootsrapKlasikYontem/>
+            <br/>
+            <BootstrapModernYontem/>
+            <br/>
+            <ReactIcons/>
+            <br/>
+            <MaterialIcons/>
         </>
     )
 };
