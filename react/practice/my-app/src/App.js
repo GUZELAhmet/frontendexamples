@@ -9,10 +9,13 @@ import Ulkeler from './components/c7/Ulkeler';
 
 import Kisiler from './components/c8/kisiler';
 
+
+import Shop from './components/c10/Shop';
+
 function App() {
   return (
    <>
-   
+  {/*
   <Dersler/>
    <IsLogin/>
    <Filtererd/>
@@ -21,6 +24,8 @@ function App() {
    <Product/>
    <Ulkeler/>
    <Kisiler/>
+   <StudentCard/> */} 
+   <Shop/>
    </>
   );
 }
