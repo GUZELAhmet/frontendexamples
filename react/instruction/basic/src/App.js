@@ -18,6 +18,9 @@ import ReactIcons from './components/10-icons/01-react-icons';
 import MaterialIcons from './components/10-icons/02-material-icons';
 import Events from './components/11-events/Events';
 import ProductShop from './components/12-product-shop/Product-shop';
+import State from './components/13-usestate/01-state';
+import Counter1 from './components/14-counter1/counter1';
+import BirthDay from './components/15-birthday/birthday';
 
 const profileCardData = {
     name: "Emir",
@@ -91,6 +94,13 @@ export default function App() {
             <Events/>
             <br/>
             <ProductShop/>
+            <br/>
+            <State/>
+            <br/>
+            <Counter1/>
+            <br/>
+            <BirthDay/>
+
         </>
     )
 };
