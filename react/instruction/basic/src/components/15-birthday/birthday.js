@@ -1,27 +1,38 @@
 import React, { useState } from 'react'
-import { Button,  Container } from 'react-bootstrap';
+import { Button, ButtonGroup, Container, Row } from 'react-bootstrap'
 import peopleData from "../../assets/data/people.json"
-import Person from './Person';
+import Person from './Person'
 
+const Birthday = () => {
+    const [people, setPeople] = useState(peopleData)
+   
 
-const BirthDay = () => {
-    const [people,setPeople]=useState(peopleData)
-  return (
-    <Container>
-        <h2> Bu Gün Doğanlar</h2>
-        <p>Bugün Doğan *** insan var</p>
-        {
-            people.map((person)=>(<Person/>))
-        }
+    const deletePerson = (id) => {
+        const arr = people.filter((person) => person.id !== id);
+        setPeople(arr);
+    };
 
-
-
-       < Button variant="danger">
-       
-       </Button  >
-        
-       </Container>
-  )
+    return (
+        <Container>
+            <h2>Bugün Doğanlar</h2>
+            <p>
+                Bugün doğan {people.length} kişi var.
+            </p>
+            <Row>
+                {
+                    people.map((person) => (<Person key={person.id} {...person} deletePerson={deletePerson} />))
+                }
+            </Row>
+            <ButtonGroup>
+                <Button variant='danger' onClick={() => setPeople([])}>
+                    Hepsini Temizle
+                </Button>
+                <Button variant='success' onClick={() => setPeople(peopleData)}>
+                    Verileri Getir
+                </Button>
+            </ButtonGroup>
+        </Container>
+    )
 }
 
-export default BirthDay
+export default Birthday
