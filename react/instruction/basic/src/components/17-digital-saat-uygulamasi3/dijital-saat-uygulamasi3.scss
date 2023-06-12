@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "dijital";
+    src: url("../../assets/font/ds-digi.ttf");
+}
+
+.dijital-saat-uygulamasi3 {
+    margin: 2rem 0;
+    font-family: dijital;
+    background-color: rgb(42, 26, 107);
+    border-radius: 0.5rem;
+    color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+
+    .time {
+        font-size: 5rem;
+    }
+}

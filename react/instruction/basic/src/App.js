@@ -23,6 +23,10 @@ import Counter1 from './components/14-counter1/counter1';
 import BirthDay from './components/15-birthday/birthday';
 import UseEffect from './components/16-useefffect/useEffect';
 import { Button } from 'react-bootstrap';
+import DijitalSaatUygulamasi3 from './components/17-digital-saat-uygulamasi3/dijital-saat-uygulamasi3';
+import FilterList from './components/18-filter-list/filter-list';
+import UseRef from './components/19-useRef/useRef';
+
 
 const profileCardData = {
     name: "Emir",
@@ -109,6 +113,13 @@ export default function App() {
                 use Effect Hook'unu Gizle
             </Button>
             {show && <UseEffect />}
+
+            <br/>
+            <DijitalSaatUygulamasi3/>
+            <br/>
+          <FilterList/>
+          <br/>
+          <UseRef/>
 
         </>
     )

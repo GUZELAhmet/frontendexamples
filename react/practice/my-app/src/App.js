@@ -1,5 +1,5 @@
 import React from 'react';
-import Dersler from './components/c1/Dersler';
+/*import Dersler from './components/c1/Dersler';
 import IsLogin from './components/c2/IsLogin';
 import Filtererd from './components/c3/Filtererd';
 import SelectedCourses from './components/c4/SelectedCourses';
@@ -11,6 +11,9 @@ import Kisiler from './components/c8/kisiler';
 
 
 import Shop from './components/c10/Shop';
+import RandomImage from './components/c11/RandomImage';*/
+import Sairler from './components/c12/Sairler';
+import Akis from './components/c13/Akis';
 
 function App() {
   return (
@@ -24,8 +27,11 @@ function App() {
    <Product/>
    <Ulkeler/>
    <Kisiler/>
-   <StudentCard/> */} 
-   <Shop/>
+   <StudentCard/>  
+   <Shop/> 
+   <RandomImage/>*/}
+   <Sairler/>
+   <Akis/>
    </>
   );
 }
