@@ -26,6 +26,9 @@ import { Button } from 'react-bootstrap';
 import DijitalSaatUygulamasi3 from './components/17-digital-saat-uygulamasi3/dijital-saat-uygulamasi3';
 import FilterList from './components/18-filter-list/filter-list';
 import UseRef from './components/19-useRef/useRef';
+import ClassTurundeCompenentler from './components/20-compenent-turleri/01-class-turunde-conpenentler';
+import FonksiyonTurundeCompenentler from './components/20-compenent-turleri/02-fonksiyon-turunde-compenentler';
+import Fetch from './components/21-fetch/01-fetch';
 
 
 const profileCardData = {
@@ -120,6 +123,12 @@ export default function App() {
           <FilterList/>
           <br/>
           <UseRef/>
+          <br/>
+          {show && <ClassTurundeCompenentler />}
+          <br/>
+         {/* <FonksiyonTurundeCompenentler/>*/}
+         <br/>
+         <Fetch/>
 
         </>
     )
