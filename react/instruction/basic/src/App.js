@@ -46,7 +46,7 @@ export default function App() {
 
     return (
         <>
-            <Apples />
+         {/*    <Apples />
             <Orange />
             <Bananas1/>
             <Jsx1/>
@@ -91,7 +91,7 @@ export default function App() {
                     { title: "Following", stat: 10 },
                 ]}
             />
-            <br/>
+           <br/>
             <ProfileCard {...profileCardData}/>
             <br/>
             <BootsrapKlasikYontem/>
@@ -127,7 +127,7 @@ export default function App() {
           {show && <ClassTurundeCompenentler />}
           <br/>
          {/* <FonksiyonTurundeCompenentler/>*/}
-         <br/>
+         <br/> 
          <Fetch/>
 
         </>

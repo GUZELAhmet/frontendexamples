@@ -14,6 +14,8 @@ import Shop from './components/c10/Shop';
 import RandomImage from './components/c11/RandomImage';*/
 import Sairler from './components/c12/Sairler';
 import Akis from './components/c13/Akis';
+import Paragraph from './components/c14/Paragraph';
+import Countries from './components/c15/Countries';
 
 function App() {
   return (
@@ -29,9 +31,12 @@ function App() {
    <Kisiler/>
    <StudentCard/>  
    <Shop/> 
-   <RandomImage/>*/}
+   <RandomImage/>
    <Sairler/>
    <Akis/>
+   <br/>
+   <Paragraph/>*/}
+   <Countries/>
    </>
   );
 }
