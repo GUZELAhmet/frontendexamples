@@ -29,6 +29,8 @@ import UseRef from './components/19-useRef/useRef';
 import ClassTurundeCompenentler from './components/20-compenent-turleri/01-class-turunde-conpenentler';
 import FonksiyonTurundeCompenentler from './components/20-compenent-turleri/02-fonksiyon-turunde-compenentler';
 import Fetch from './components/21-fetch/01-fetch';
+import Fetch2 from './components/21-fetch/02-fetch';
+import Countries from './components/22-axios/Countries';
 
 
 const profileCardData = {
@@ -129,6 +131,9 @@ export default function App() {
          {/* <FonksiyonTurundeCompenentler/>*/}
          <br/> 
          <Fetch/>
+         <Fetch2/>
+         <br/>
+         <Countries/>
 
         </>
     )

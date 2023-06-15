@@ -1,54 +1,67 @@
-import { useEffect, useState } from 'react'
-import { Container, ListGroup } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import { Button, Container, Row } from 'react-bootstrap';
+import UserCard from './02-user-card';
 
-const Fetch1 = () => {
-    const [users, setUsers] = useState({});
+// const myObject = {
+//     avatar: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/992.jpg",
+//     country: "Hungary",
+//     email: "Rossie_Jacobs74@hotmail.com",
+//     firstName: "Adam",
+//     id: "1",
+//     lastName: "Ratke"
+// }
 
+const Fetch2 = () => {
+    const [users, setUsers] = useState([]);
+    const [flag, setFlag] = useState(false);
 
-    let myArray = [];
-    let myObject = {
-        name: 'John',
-        age: 30,
-    };
+    // TODO: API'yi env'de sakla
     
-    // console.log(myArray.length)
-    // console.log(Object.keys(myObject).length > 0);
     
-    const getMyUserData = async () => {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users');
-        const data = await response.json();
-        setUsers(data);
-    };
+    const updateUser = (userId, payload) => {
+        fetch(`https://632c6c535568d3cad8855dec.mockapi.io/api/v1/users/${userId}`, payload, {
+            method: 'PUT',
+            headers: {
+                "Content-Type": "application/json",
+            },
+        })
+        setFlag(prev => !prev);
+    }
 
+    const userInfo = {
+        avatar: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1068.jpg",
+        country: "British Indian Ocean Territory (Chagos Archipelago)",
+        email: "allangislason@gmail.com",
+        firstName: "Double",
+        id: "10",
+        lastName: "Iskender"
+    }
+
+    // load user data
+    const loadUserData = () => {
+        fetch('https://632c6c535568d3cad8855dec.mockapi.io/api/v1/users')
+            .then(response => response.json())
+            .then(data => setUsers(data))
+            .catch(error => console.log(error.message));
+    }
+
+    console.log(users)
 
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(response => response.json())
-            .then(data => {
-                setUsers(data);
-                // console.log(data);
-            })
-            .catch(error => console.log(error));
-    }, [])
-    
+        loadUserData();
+    }, [flag]);
     
     return (
         <Container>
-            <h2>Fetch</h2>
-            <ListGroup>
+            <Row className='gap-1 mb-3'>
                 {
-                    Object.keys(users).length > 0 && users.map((user, index) => {
-                        return (
-                            <ListGroup.Item key={index}>
-                                {user.name}
-                            </ListGroup.Item>
-                        )
-                    })
+                    users?.map((user) => (<UserCard key={user.id} {...user} />))
                 }
-            </ListGroup>
-            <h2>HELLO</h2>
+            </Row>
+            <Button onClick={() => updateUser(10, JSON.stringify(userInfo))}>
+                UPDATE USER
+            </Button>
         </Container>
     )
 }
-
-export default Fetch1;
+export default Fetch2;
