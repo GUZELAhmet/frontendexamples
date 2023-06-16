@@ -11,11 +11,13 @@ import Kisiler from './components/c8/kisiler';
 
 
 import Shop from './components/c10/Shop';
-import RandomImage from './components/c11/RandomImage';*/
+import RandomImage from './components/c11/RandomImage';
 import Sairler from './components/c12/Sairler';
 import Akis from './components/c13/Akis';
 import Paragraph from './components/c14/Paragraph';
-import Countries from './components/c15/Countries';
+import Countries from './components/c15/Countries';*/
+import Tours from './components/c16/Tours';
+import Products from './components/c17/Products';
 
 function App() {
   return (
@@ -35,8 +37,10 @@ function App() {
    <Sairler/>
    <Akis/>
    <br/>
-   <Paragraph/>*/}
-   <Countries/>
+   <Paragraph/>
+   <Countries/>*/}
+   <Tours/>
+   <Products/>
    </>
   );
 }
