@@ -1,4 +1,5 @@
 import React from 'react';
+import FormExample from './components/c19/FormExample';
 /*import Dersler from './components/c1/Dersler';
 import IsLogin from './components/c2/IsLogin';
 import Filtererd from './components/c3/Filtererd';
@@ -15,9 +16,10 @@ import RandomImage from './components/c11/RandomImage';
 import Sairler from './components/c12/Sairler';
 import Akis from './components/c13/Akis';
 import Paragraph from './components/c14/Paragraph';
-import Countries from './components/c15/Countries';*/
+import Countries from './components/c15/Countries';
 import Tours from './components/c16/Tours';
 import Products from './components/c17/Products';
+import Home from './components/c18/Home';*/
 
 function App() {
   return (
@@ -38,9 +40,12 @@ function App() {
    <Akis/>
    <br/>
    <Paragraph/>
-   <Countries/>*/}
+   <Countries/>
    <Tours/>
    <Products/>
+   <br/>
+   <Home/>*/}
+   <FormExample/>
    </>
   );
 }

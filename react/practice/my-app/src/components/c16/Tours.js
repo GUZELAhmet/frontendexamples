@@ -24,7 +24,7 @@ const Tours = () => {
         </h2>
         <div>
             {tours.map((item) => 
-            (<Tour key={item.id} {...item} removeById={()=>removeById}/>) ) }
+            (<Tour key={item.id} {...item} removeById={removeById}/>) ) }
                        
         </div>
 

@@ -35,6 +35,8 @@ import Parent from './components/23-lifting-state/01-parent';
 import Form1 from './components/24-forms/01-form';
 import Form2 from './components/24-forms/02-form';
 import Form3 from './components/24-forms/03-form';
+import FormikYup1 from './components/25-formik-yup/01-formik-yup';
+import FormikYup2 from './components/25-formik-yup/02-formik-yup';
 
 
 const profileCardData = {
@@ -146,6 +148,9 @@ export default function App() {
          <Form2/>
          <br/>
          <Form3/>
+         <FormikYup1/>
+         <FormikYup2/>
+
 
         </>
     )
