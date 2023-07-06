@@ -1,0 +1,16 @@
+{
+    "code": "tr",
+    "name": "Turkish",
+    "icon": "tr",
+    "currency": {
+        "title": "TRY",
+        "code": "try",
+        "icon": "₺"
+    },
+    "trivialInfo": {
+        "welcome": "Web sitemize hoş geldiniz!",
+        "aboutUs": "Hakkımızda",
+        "contact": "Bize Ulaşın",
+        "language": "Dil"
+    }
+}

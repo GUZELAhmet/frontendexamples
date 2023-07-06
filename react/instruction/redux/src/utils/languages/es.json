@@ -1,0 +1,16 @@
+{
+    "code": "es",
+    "name": "Spanish",
+    "icon": "es",
+    "currency": {
+        "title": "EUR",
+        "code": "eur",
+        "icon": "€"
+    },
+    "trivialInfo": {
+        "welcome": "¡Bienvenido a nuestro sitio web!",
+        "aboutUs": "Acerca de nosotros",
+        "contact": "Contáctenos",
+        "language": "Idioma"
+    }
+}

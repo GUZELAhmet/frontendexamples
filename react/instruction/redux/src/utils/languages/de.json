@@ -1,0 +1,16 @@
+{
+    "code": "de",
+    "name": "German",
+    "icon": "de",
+    "currency": {
+        "title": "EUR",
+        "code": "eur",
+        "icon": "€"
+    },
+    "trivialInfo": {
+        "welcome": "Willkommen auf unserer Website!",
+        "aboutUs": "Über uns",
+        "contact": "Kontaktiere uns",
+        "language": "Sprache"
+    }
+}

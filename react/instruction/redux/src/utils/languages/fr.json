@@ -1,0 +1,16 @@
+{
+    "code": "fr",
+    "name": "French",
+    "icon": "fr",
+    "currency": {
+        "title": "EUR",
+        "code": "eur",
+        "icon": "€"
+    },
+    "trivialInfo": {
+        "welcome": "Bienvenue sur notre site!",
+        "aboutUs": "À propos de nous",
+        "contact": "Nous contacter",
+        "language": "Langue"
+    }
+}

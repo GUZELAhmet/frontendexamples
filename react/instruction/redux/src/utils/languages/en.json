@@ -1,0 +1,16 @@
+{
+    "code": "en",
+    "name": "English",
+    "icon": "us",
+    "currency": {
+        "title": "USD",
+        "code": "usd",
+        "icon": "$"
+    },
+    "trivialInfo": {
+        "welcome": "Welcome to our website!",
+        "aboutUs": "About Us",
+        "contact": "Contact Us",
+        "language": "Language"
+    }
+}

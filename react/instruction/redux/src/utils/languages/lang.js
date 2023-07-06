@@ -1,0 +1,1 @@
+export const languagesList = ["de", "en", "es", "fr", "tr"];
