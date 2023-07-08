@@ -6,7 +6,6 @@ import { toggleTheme } from '../store/theme/themeSlice';
 const Theme = () => {
     const themeState = useSelector(state => state.theme);
     const theme = themeState.theme;
-    console.log(theme);
     const dispatch = useDispatch();
 
     const oppositeTheme = theme === "light" ? "dark" : "light"
@@ -20,6 +19,7 @@ const Theme = () => {
                 {oppositeTheme}
             </Button>
         </>
+
 
     )
 }

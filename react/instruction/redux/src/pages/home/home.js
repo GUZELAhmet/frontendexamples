@@ -16,7 +16,7 @@ const Home = () => {
         <Container fluid className={`bg-${theme} text-${oppositeTheme} h-100 p-3`}>
             <Theme />
             <Counter />
-            <Localization/>
+            <Localization />
             <Content />
         </Container>
     )

@@ -1,8 +1,12 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
-import localeFile from "../utils/languages/tr.json"
+import { Container } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
 
 const Content = () => {
+    const languageState = useSelector(state => state.language);
+
+    const localeFile = require(`../utils/languages/${languageState.language}.json`)
+
     return (
         <Container className='mt-5'>
             <h1>{localeFile.trivialInfo.welcome}</h1>

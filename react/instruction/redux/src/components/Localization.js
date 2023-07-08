@@ -16,7 +16,6 @@ const Localization = () => {
         dispatch(toggleLanguage(lang))
     }
 
-
     return (
         <Dropdown className='my-5'>
             <Dropdown.Toggle>
