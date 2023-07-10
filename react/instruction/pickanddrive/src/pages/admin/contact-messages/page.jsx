@@ -1,8 +1,5 @@
-
 const AdminContactMessagesPage = () => {
-  return (
-    <div>AdminContactMessagesPage</div>
-  )
-}
+    return <div>AdminContactMessagesPage</div>;
+};
 
-export default AdminContactMessagesPage
+export default AdminContactMessagesPage;

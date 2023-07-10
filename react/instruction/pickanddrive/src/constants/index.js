@@ -62,6 +62,7 @@ const fuelTypes = [
     },
 ];
 
+
 const offers = [
     {
         title: "City Explorer",
@@ -215,6 +216,7 @@ const teamMembers = [
     }
 ];
 
+
 const transmissionTypes = [
     {
         id: 1,
@@ -264,9 +266,6 @@ const whatWeDo = {
     ]
 };
 
-const whoWeAre = {};
-
-
 export const constants = {
     airConditioningTypes,
     fuelTypes,
@@ -279,6 +278,5 @@ export const constants = {
     teamMembers,
     transmissionTypes,
     website,
-    whatWeDo,
-    whoWeAre
+    whatWeDo
 }

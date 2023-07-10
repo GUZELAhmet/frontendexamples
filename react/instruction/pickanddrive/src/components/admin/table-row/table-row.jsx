@@ -1,8 +1,5 @@
-
 const TableRow = () => {
-  return (
-    <div>TableRow</div>
-  )
-}
+    return <div>TableRow</div>;
+};
 
-export default TableRow
+export default TableRow;

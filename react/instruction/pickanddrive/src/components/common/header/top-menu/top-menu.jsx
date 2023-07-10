@@ -1,8 +1,5 @@
-
 const TopMenu = () => {
-  return (
-    <div>TopMenu</div>
-  )
-}
+    return <div>TopMenu</div>;
+};
 
-export default TopMenu
+export default TopMenu;

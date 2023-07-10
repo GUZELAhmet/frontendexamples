@@ -1,8 +1,5 @@
+const UserReservationDetailsAccordion = () => {
+    return <div>UserReservationDetailsAccordion</div>;
+};
 
-const UserResarvationDetailsAccordion = () => {
-  return (
-    <div>UserResarvationDetailsAccordion</div>
-  )
-}
-
-export default UserResarvationDetailsAccordion
+export default UserReservationDetailsAccordion;

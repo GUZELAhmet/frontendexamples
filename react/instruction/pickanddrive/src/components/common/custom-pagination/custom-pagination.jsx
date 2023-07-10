@@ -1,8 +1,5 @@
-
 const CustomPagination = () => {
-  return (
-    <div>CustomPagination</div>
-  )
-}
+    return <div>CustomPagination</div>;
+};
 
-export default CustomPagination
+export default CustomPagination;

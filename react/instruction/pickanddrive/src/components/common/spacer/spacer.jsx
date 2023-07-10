@@ -1,9 +1,5 @@
-
-
 const Spacer = () => {
-  return (
-    <div>Spacer</div>
-  )
-}
+    return <div>Spacer</div>;
+};
 
-export default Spacer
+export default Spacer;

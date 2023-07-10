@@ -1,8 +1,5 @@
-
 const ContactMap = () => {
-  return (
-    <div>ContactMap</div>
-  )
-}
+    return <div>ContactMap</div>;
+};
 
-export default ContactMap
+export default ContactMap;

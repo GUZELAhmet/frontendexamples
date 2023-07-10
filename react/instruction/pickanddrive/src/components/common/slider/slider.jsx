@@ -1,8 +1,5 @@
-
 const Slider = () => {
-  return (
-    <div>Slider</div>
-  )
-}
+    return <div>Slider</div>;
+};
 
-export default Slider
+export default Slider;

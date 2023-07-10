@@ -1,8 +1,5 @@
-
 const UserMenu = () => {
-  return (
-    <div>UserMenu</div>
-  )
-}
+    return <div>UserMenu</div>;
+};
 
-export default UserMenu
+export default UserMenu;

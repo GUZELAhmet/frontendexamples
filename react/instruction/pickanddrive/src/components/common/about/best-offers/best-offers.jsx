@@ -1,8 +1,5 @@
-
 const BestOffers = () => {
-  return (
-    <div>BestOffers</div>
-  )
-}
+    return <div>BestOffers</div>;
+};
 
-export default BestOffers
+export default BestOffers;

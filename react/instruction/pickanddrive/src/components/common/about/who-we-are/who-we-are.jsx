@@ -1,8 +1,5 @@
-
 const WhoWeAre = () => {
-  return (
-    <div>WhoWeAre</div>
-  )
-}
+    return <div>WhoWeAre</div>;
+};
 
-export default WhoWeAre
+export default WhoWeAre;

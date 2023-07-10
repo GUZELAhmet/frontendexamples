@@ -1,8 +1,5 @@
-
 const OfferItem = () => {
-  return (
-    <div>OfferItem</div>
-  )
-}
+    return <div>OfferItem</div>;
+};
 
-export default OfferItem
+export default OfferItem;

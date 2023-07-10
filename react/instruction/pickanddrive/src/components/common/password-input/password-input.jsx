@@ -1,8 +1,5 @@
-
 const PasswordInput = () => {
-  return (
-    <div>PasswordInput</div>
-  )
-}
+    return <div>PasswordInput</div>;
+};
 
-export default PasswordInput
+export default PasswordInput;

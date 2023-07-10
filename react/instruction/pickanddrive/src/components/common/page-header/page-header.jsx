@@ -1,8 +1,5 @@
-
 const PageHeader = () => {
-  return (
-    <div>PageHeader</div>
-  )
-}
+    return <div>PageHeader</div>;
+};
 
-export default PageHeader
+export default PageHeader;

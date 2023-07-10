@@ -1,8 +1,5 @@
+const UserReservationDetailsPanel = () => {
+    return <div>UserReservationDetailsPanel</div>;
+};
 
-const UserResarvationDetailsPanel = () => {
-  return (
-    <div>UserResarvationDetailsPanel</div>
-  )
-}
-
-export default UserResarvationDetailsPanel
+export default UserReservationDetailsPanel;

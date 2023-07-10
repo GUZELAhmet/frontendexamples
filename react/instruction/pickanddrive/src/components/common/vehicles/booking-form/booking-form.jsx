@@ -1,8 +1,5 @@
+const BookingForm = () => {
+    return <div>BookingForm</div>;
+};
 
-const BokkingForm = () => {
-  return (
-    <div>BokkingForm</div>
-  )
-}
-
-export default BokkingForm
+export default BookingForm;

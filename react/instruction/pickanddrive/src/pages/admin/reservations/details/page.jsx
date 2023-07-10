@@ -1,8 +1,5 @@
+const AdminReservationDetailsPage = () => {
+    return <div>AdminReservationDetailsPage</div>;
+};
 
-const AdminResarvationDetailsPage = () => {
-  return (
-    <div>AdminResarvationDetailsPage</div>
-  )
-}
-
-export default AdminResarvationDetailsPage
+export default AdminReservationDetailsPage;

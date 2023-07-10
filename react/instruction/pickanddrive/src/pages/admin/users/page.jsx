@@ -1,8 +1,5 @@
+const AdminUsersPage = () => {
+    return <div>AdminUsersPage</div>;
+};
 
-const AdminUserPage = () => {
-  return (
-    <div>AdminUserPage</div>
-  )
-}
-
-export default AdminUserPage
+export default AdminUsersPage;

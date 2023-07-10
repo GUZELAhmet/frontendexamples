@@ -1,8 +1,5 @@
-
 const DetailsPanel = () => {
-  return (
-    <div>DetailsPanel</div>
-  )
-}
+    return <div>DetailsPanel</div>;
+};
 
-export default DetailsPanel
+export default DetailsPanel;

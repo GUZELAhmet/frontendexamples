@@ -1,8 +1,7 @@
-
-const DashboarCard = () => {
+const DashboardCard = () => {
   return (
-    <div>DashboarCard</div>
+    <div>DashboardCard</div>
   )
 }
 
-export default DashboarCard
+export default DashboardCard

@@ -1,8 +1,5 @@
-
 const Vehicles = () => {
-  return (
-    <div>Vehicles</div>
-  )
-}
+    return <div>Vehicles</div>;
+};
 
-export default Vehicles
+export default Vehicles;

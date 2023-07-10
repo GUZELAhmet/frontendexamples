@@ -1,8 +1,5 @@
-
 const VehicleCard = () => {
-  return (
-    <div>VehicleCard</div>
-  )
-}
+    return <div>VehicleCard</div>;
+};
 
-export default VehicleCard
+export default VehicleCard;

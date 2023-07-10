@@ -18,7 +18,7 @@ import ContactMap from "./common/contact/map/map";
 import CustomForm from "./common/custom-form/custom-form";
 import CustomPagination from "./common/custom-pagination/custom-pagination";
 import Footer from "./common/footer/footer";
-import QuickLink from "./common/footer/quick-line/quick-line";
+import QuickLink from "./common/footer/quick-link/quick-link";
 import BottomMenu from "./common/header/bottom-menu/bottom-menu";
 import TopMenu from "./common/header/top-menu/top-menu";
 import UserMenu from "./common/header/user-menu/user-menu";
@@ -40,6 +40,7 @@ import BookingForm from "./common/vehicles/booking-form/booking-form";
 import DetailsPanel from "./common/vehicles/details-panel/details-panel";
 import PopularVehicles from "./common/vehicles/popular-vehicles/popular-vehicles";
 import VehicleCard from "./common/vehicles/vehicle-card/vehicle-card";
+
 export {
     // ADMIN COMPONENTS
     AdminCarousel,

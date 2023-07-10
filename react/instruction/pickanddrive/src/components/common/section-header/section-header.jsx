@@ -1,8 +1,5 @@
-
 const SectionHeader = () => {
-  return (
-    <div>section-header</div>
-  )
-}
+    return <div>SectionHeader</div>;
+};
 
-export default SectionHeader
+export default SectionHeader;

@@ -1,8 +1,5 @@
-
 const UserProfileForm = () => {
-  return (
-    <div>UserProfileForm</div>
-  )
-}
+    return <div>UserProfileForm</div>;
+};
 
-export default UserProfileForm
+export default UserProfileForm;
